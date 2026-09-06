@@ -1,0 +1,68 @@
+/* Global Reset & Responsive Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbars for Netflix-style horizontal rows while keeping scroll functionality */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+}
+
+/* Responsive Breakpoints */
+
+/* Mobile Devices (Max width: 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.4rem !important;
+  }
+  /* Navbar adjustments */
+  .navbar-links {
+    gap: 10px !important;
+    font-size: 11px !important;
+  }
+  /* Adjust modal sizes for mobile */
+  .responsive-modal {
+    width: 92% !important;
+    padding: 15px !important;
+  }
+}
+
+/* Tablet Devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .responsive-modal {
+    width: 80% !important;
+  }
+}
+
+/* TV & Ultra-Wide Displays (Min width: 1440px) */
+@media (min-width: 1440px) {
+  .app {
+    max-width: 1920px;
+    margin: 0 auto;
+    box-shadow: 0 0 50px rgba(0,0,0,0.9);
+  }
+}
+
+.app {
+  padding-bottom: 50px;
+}
+
+.netflix-logo {
+  color: #E50914;
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
